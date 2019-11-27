@@ -83,7 +83,9 @@ ggplot(cw, aes(Time, Weight, colour=Group)) +
   facet_wrap(~Group) +
   geom_boxplot() +
   theme(legend.position = "none") +
-  ggtitle("Chick Weight over Time by Diet")
+  ggtitle("Chick Weight over Time by diet") +
+        xlab("Time(days)") +
+        ylab("weight(grams)")
 ```
 
 ## Scatter Plot with Mean Lines
